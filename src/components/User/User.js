@@ -1,8 +1,13 @@
-export const User = ({user, setUser}) => {
+export const User = ({user, setUser, setUserIdForPosts}) => {
+    const click = () => {
+        setUserIdForPosts(false);
+        setUser(user);
+    }
+
     return (
         <div>
             {user.name}
-            <input type="button" value="show info" onClick={() => setUser(user)}/>
+            <input type="button" value="show info" onClick={(click)}/>
         </div>
     );
 }

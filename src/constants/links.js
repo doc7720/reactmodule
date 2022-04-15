@@ -1,6 +1,6 @@
 const baseUrl = process.env.REACT_APP_API_URL;
 
-export urls = {
+export const urls = {
     users:'/users',
     posts:'/posts',
 }
